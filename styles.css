@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body > * {
+  background-color: #ccc;
+  padding: 1em;
+}
+
+nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 10em;
+  grid-gap: 1em;
+}
+
+nav > * {
+  background-color: #999
+}
+
+main {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 65em;
+  grid-gap: 1em;
+
+}
+
+main .featured-article{
+  background-color: #333;
+}
+
+main h1 {
+  position: absolute;
+  left: 44%;
+  top: 5%;
+  background-color: #111;
+  height: 5em;
+  width: 10em;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 40em;
+  grid-gap: 1em;
+  padding: 0 25em 5em;
+}
+
+
+.article {
+  background-color: #999;
+}
+
+.articles .ad {
+  background-color: #ccc;
+}
+
+.articles .join {
+  grid-column: span 2;
+  background-color: #666;
+}
+
+.smashingconf {
+  background-color: #333;
+  height: 40em;
+}
+
+.community-links {
+  padding: 5em 25em 5em;
+}
+
+.community-links .people {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 20em;
+  grid-gap: 5em;
+}
+
+.community-links .person {
+  background-color: #999;
+}
+
+.community-links .featured-person {
+  height: 30em;
+  width: 70em;
+  background-color: #666;
+  margin-bottom: 5em;  
+}
+
+body > .ad {
+  height: 20em;
+  background-color: #666;
+}
+
+.community-posts {
+  padding: 5em 25em 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-rows: 40em;
+  grid-gap: 5em;
+}
+
+.post {
+  background-color: #999;
+}
+
+.newsletter {
+  padding: 5em 20em;
+}
+
+.newsletter .ad {
+  background-color: #333;
+  height: 80em;
+}
+
+footer {
+  background-color: #666;
+  height: 60em;
+}
